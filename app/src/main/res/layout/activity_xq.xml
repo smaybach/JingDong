@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jingdong.activity.XQActivity">
+ <!-- <WebView
+      android:id="@+id/web"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  </WebView>-->
+  <com.facebook.drawee.view.SimpleDraweeView
+  android:id="@+id/sim"
+  android:layout_width="match_parent"
+  android:layout_height="600dp"
+  android:src="@mipmap/ic_launcher"
+  />
+  <TextView
+      android:id="@+id/tv"
+      android:layout_below="@+id/sim"
+      android:layout_width="25dp"
+      android:layout_height="20dp"
+      android:background="#dc143c"
+      android:textColor="#fffffb"
+      android:gravity="center"
+      android:textSize="10sp"
+      android:text="自营"/>
+  <TextView
+      android:id="@+id/tv_name"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginLeft="30dp"
+      android:layout_below="@+id/sim"
+      android:text="1" />
+  <TextView
+      android:id="@+id/tv_subhead"
+      android:layout_below="@+id/tv_name"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_marginLeft="30dp"
+      android:text="3"/>
+  <TextView
+      android:id="@+id/tv_time"
+      android:layout_below="@+id/tv_subhead"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginLeft="30dp"
+      android:text="4"
+      />
+  <TextView
+      android:id="@+id/tv_price"
+      android:layout_below="@+id/tv_time"
+      android:layout_width="match_parent"
+      android:layout_height="30dp"
+      android:layout_marginLeft="30dp"
+      android:text="2"/>
+
+  <Button
+      android:id="@+id/bn"
+      android:layout_width="100dp"
+      android:layout_height="50dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:text="加入购物车"
+      android:textSize="15sp"
+      android:textColor="#fffffb"
+      android:background="#ff0000"/>
+
+</RelativeLayout>

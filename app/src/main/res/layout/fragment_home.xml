@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home_iv"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/a"/>
+    <com.youth.banner.Banner
+    android:layout_width="match_parent"
+    android:id="@+id/home_banner"
+    android:layout_height="180dp">
+    </com.youth.banner.Banner>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/gv_re"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+</android.support.v7.widget.RecyclerView>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/xrr"/>
+    <LinearLayout
+        android:id="@+id/ll_xsqg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fffffb"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秒杀倒计时:"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#000"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="02"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=":"
+            android:textColor="#fffffb"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#000"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="15"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=":"
+            android:textColor="#fffffb"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#000"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="36"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ms_re"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:background="#fffffb"
+        android:textColor="#00BFFF"
+        android:text="为你推荐"/>
+            <android.support.v7.widget.RecyclerView
+              android:id="@+id/tj_re"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fffffb">
+                >
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

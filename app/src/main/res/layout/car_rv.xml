@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/eckboxnum"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/sdv"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/tvs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sssss"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvs2"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:text="sssss"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addcart_pop_div1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/addcart_pop_linear"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买数量"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"/>
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:text="+"
+            android:textSize="15sp"
+            android:background="#ddd"
+            android:textColor="#aaa"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/addcart_pop_add"/>
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="12dp"
+            android:id="@+id/addcart_pop_goodnum"
+            android:layout_toLeftOf="@+id/addcart_pop_add"
+            android:layout_centerVertical="true"
+            />
+        <Button
+            android:layout_toLeftOf="@+id/addcart_pop_goodnum"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:text="-"
+            android:textSize="15sp"
+            android:background="#ddd"
+            android:textColor="#aaa"
+            android:layout_centerVertical="true"
+            android:id="@+id/addcart_pop_jian"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:text="删除"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

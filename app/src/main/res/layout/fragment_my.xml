@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="@drawable/b5b">
+
+        <ImageView
+            android:id="@+id/ivtou"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/b5i"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:id="@+id/tv_dl"
+            android:textColor="#fffffb"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/注册>"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/tvzc"
+            android:textColor="#fffffb"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/wode"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+</LinearLayout>
